@@ -1,8 +1,5 @@
 	package com.ty;
 	
-	
-	
-	
 	import java.io.IOException;
 	import javax.servlet.ServletException;
 	import javax.servlet.annotation.WebServlet;
@@ -25,15 +22,15 @@
 	
 	        // Perform conversion logic based on input unit
 	        if ("celsius".equals(unit)) {
-	            // Convert Celsius to Fahrenheit and Kelvin (skip Celsius identity)
+	        
 	            fahrenheitResult = String.format("%.2f°C = %.2f°F", temperature, celsiusToFahrenheit(temperature));
 	            kelvinResult = String.format("%.2f°C = %.2fK", temperature, celsiusToKelvin(temperature));
 	        } else if ("fahrenheit".equals(unit)) {
-	            // Convert Fahrenheit to Celsius and Kelvin (skip Fahrenheit identity)
+	        
 	            celsiusResult = String.format("%.2f°F = %.2f°C", temperature, fahrenheitToCelsius(temperature));
 	            kelvinResult = String.format("%.2f°F = %.2fK", temperature, fahrenheitToKelvin(temperature));
 	        } else if ("kelvin".equals(unit)) {
-	            // Convert Kelvin to Celsius and Fahrenheit (skip Kelvin identity)
+	         
 	            celsiusResult = String.format("%.2fK = %.2f°C", temperature, kelvinToCelsius(temperature));
 	            fahrenheitResult = String.format("%.2fK = %.2f°F", temperature, kelvinToFahrenheit(temperature));
 	        }
